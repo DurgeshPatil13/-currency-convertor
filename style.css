@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.header p {
+  color: #666;
+}
+
+.amount-section {
+  margin-bottom: 25px;
+}
+
+.amount-section label,
+.from label,
+.to label {
+  display: block;
+  margin-bottom: 8px;
+  color: #444;
+  font-weight: 600;
+}
+
+.amount-section input,
+.from select,
+.to select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.amount-section input:focus,
+.from select:focus,
+.to select:focus {
+  border-color: #4f46e5;
+}
+
+.currency-section {
+  display: flex;
+  align-items: end;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.from,
+.to {
+  flex: 1;
+}
+
+.swap-btn {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.swap-btn:hover {
+  background-color: #3730a3;
+}
+
+.convert-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4f46e5;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.convert-btn:hover {
+  background-color: #3730a3;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+}
+
+.result h2 {
+  color: #222;
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .currency-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .swap-btn {
+    width: 100%;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+  }
+}

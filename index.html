@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>💱 Currency Converter</h1>
+            <p>Live Exchange Rates</p>
+        </div>
+
+        <div class="amount-section">
+            <label>Amount</label>
+            <input type="number" placeholder="Enter Amount">
+        </div>
+
+        <div class="currency-section">
+
+            <div class="from">
+                <label>From</label>
+                <select>
+                    <option>USD</option>
+                    <option>INR</option>
+                    <option>EUR</option>
+                    <option>GBP</option>
+                </select>
+            </div>
+
+            <button class="swap-btn">⇄</button>
+
+            <div class="to">
+                <label>To</label>
+                <select>
+                    <option>INR</option>
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>GBP</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button class="convert-btn">
+            Convert
+        </button>
+
+        <div class="result">
+            <h2>₹0.00</h2>
+        </div>
+
+    </div>
+
+</body>
+</html>
