@@ -17,18 +17,16 @@
 
         <div class="amount-section">
             <label>Amount</label>
-            <input type="number" placeholder="Enter Amount">
+            <input id="inputbox" type="number" placeholder="Enter Amount">
         </div>
 
         <div class="currency-section">
 
             <div class="from">
                 <label>From</label>
-                <select>
+                <select id="from" class="selectoption">
                     <option>USD</option>
-                    <option>INR</option>
-                    <option>EUR</option>
-                    <option>GBP</option>
+             
                 </select>
             </div>
 
@@ -36,11 +34,9 @@
 
             <div class="to">
                 <label>To</label>
-                <select>
+                <select id="to" class="otheroption">
                     <option>INR</option>
-                    <option>USD</option>
-                    <option>EUR</option>
-                    <option>GBP</option>
+                
                 </select>
             </div>
 
@@ -55,6 +51,6 @@
         </div>
 
     </div>
-
+<script src="script.js"></script>
 </body>
 </html>
